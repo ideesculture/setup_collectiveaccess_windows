@@ -22,6 +22,8 @@ Open the folder c:\MAMP\bin\PHP and rename :
 - php8.0.1 to _php8.0.1 (to disable it)
 - php8.1.0 to _php8.1.0 (to disable it)
 
+Then STOP services and restart MAMP.
+
 ![Disable PHP 8](mamp_disable_php8.png)
 
 ### 3. Launch the CollectiveAccessMAMP_setup.exe
