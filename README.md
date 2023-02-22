@@ -1,7 +1,7 @@
 # setup_collectiveaccess_windows
 Simple setup.exe auto install for Windows, requiring MAMP to be installed first
 
-This project is maintained by <a href="https://www.ideesculture.com">IdéesCulture</a>. We do provide services on CollectiveAccess mostly in french speaking areas or institutions ; for services in USA, Canada and american country, please contact Whirl-i-Gig. For every other demands, please check collectiveaccess.org first.
+This project is maintained by <a href="https://www.ideesculture.com">IdéesCulture</a>. We do provide services on CollectiveAccess mostly in french speaking areas or institutions ; for services in USA, Canada and LATAM, please contact Whirl-i-Gig. For every other demands, please check collectiveaccess.org first.
 
 ## How to use the installer
 
@@ -33,6 +33,10 @@ Then STOP services and restart MAMP.
 ----
 
 ## Developer notes
+### Github Issues
+
+Please label properly your issues as Bug or Enhancement. For bugs, we need to have screen captures, if your config is not a blank MAMP install on a virgin Windows 11 setup, give us some details.
+
 ### Developer prerequisites
 Prerequisites
 
@@ -75,3 +79,7 @@ Thinking to deploy a test php file that does not redirect to install if PHP is i
 CollectiveAccess is used in classrooms for museum curators, collection management... in France. Students in museum studies are not always able to install by themselves CollectiveAccess. This setup.exe aims to bring that gap BUT it is not to be thought of as a way to have a proper install inside a museum : backup questions are not handled, windows MAMP is not meant to be a secured Apache/MySQL/Php platform to be used as a server...
 
 Use it to play inside CollectiveAccess, learn and discover.
+
+## Windows setup is exotic for us...
+
+I built this tool aimed for testing and students, most are under Win. I chose MacOS ages ago, and our servers runs with Debian. There are more actual way of doing this, through Wix toolset and MSI, but batch is faster, as we can fastly mimic simple bash scripts :-)
