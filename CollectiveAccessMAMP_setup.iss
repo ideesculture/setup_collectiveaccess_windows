@@ -30,6 +30,11 @@ Filename: "http://localhost/providence/"; \
 [Code]
 procedure InitializeWizard;
 begin
+  { Si MAMP n'est pas installé, abort } 
+  if (not FileExists('C:\MAMP\bin\php\php7.4.16\php.exe')) then
+  begin
+    Abort;
+  end;     
   idpAddFile('https://github.com/collectiveaccess/providence/archive/refs/tags/1.7.17.zip', ExpandConstant('{tmp}\providence.zip'));
   { Download after "Ready" wizard page }
   idpDownloadAfter(wpReady);
